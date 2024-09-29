@@ -111,6 +111,10 @@ CREATE TABLE invoice_line (
     FOREIGN KEY (track_id) REFERENCES track(track_id)
 );
 
+#soucis d'importation sur le fichier employee lié à une clé étrangére (reports_to)
+#resolution par importation manuelle
+INSERT INTO employee (employee_id, last_name, first_name, title, reports_to, birthdate, hire_date, address, city, state, country, postal_code, phone, fax, email)
+VALUES (9, 'Madan', 'Mohan', 'Senior General Manager', NULL, '1961-01-26', '2016-01-14', '1008 Vrinda Ave MT', 'Edmonton', 'AB', 'Canada', 'T5K 2N1', '+1 (780) 428-9482', '+1 (780) 428-9482', 'madan.mohan@chinookcorp.com');
 
 
 
