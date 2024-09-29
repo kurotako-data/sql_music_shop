@@ -111,4 +111,6 @@ CREATE TABLE invoice_line (
     FOREIGN KEY (track_id) REFERENCES track(track_id)
 );
 
-SHOW TABLES;
+
+
+
